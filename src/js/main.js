@@ -3,9 +3,11 @@ import '../scss/styles.scss'
 
 // Import only the Bootstrap components we need
 import { Dropdown, Offcanvas, Popover } from 'bootstrap';
+import { model } from './model.js';
+import { panel } from './panel.js';
+import { ModeloPieza } from './ModeloPieza.js';
 
-// Create an example popover
-document.querySelectorAll('[data-bs-toggle="popover"]')
-  .forEach(popover => {
-    new Popover(popover)
-  })
+console.log(panel)
+
+const ModeloDePieza = new ModeloPieza()
+console.log((ModeloDePieza))
